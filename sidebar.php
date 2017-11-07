@@ -8,10 +8,23 @@
 
 	<div class="widget typology-responsive-menu">
 		<?php get_template_part('template-parts/header/elements/main-menu'); ?>
+		<ul class="typology-nav typology-main-navigation" id="menu-top-menu" style="opacity: 1;margin-top:100px">
+								<li class="menu-item menu-item-type-custom menu-item-object-custom">
+									<a href="https://www.dnfinder.com/users/sign_in">Sign in</a>
+								</li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom">
+									<a href="https://www.dnfinder.com/users/sign_up">Sign Up</a>
+								</li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom sell_domains">
+									<a class="border-white" href="https://www.dnfinder.com/listings/sell">Sell Domains</a>
+								</li>
+							</ul>
 	</div>
 
+
+
 	<?php if( typology_header_display('sidebar-button') ): ?>
-			<?php $sidebar = typology_sidebar(); ?>	
+			<?php $sidebar = typology_sidebar(); ?>
 			<?php if ( is_active_sidebar( $sidebar ) ) : ?>
 					<?php dynamic_sidebar( $sidebar ); ?>
 			<?php else: ?>
