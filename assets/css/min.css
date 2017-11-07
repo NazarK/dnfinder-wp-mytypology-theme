@@ -231,3 +231,8 @@
     height: auto;
   }
 }
+
+
+.typology-sidebar .current-menu-item > a {
+  color: #009fef;
+}
