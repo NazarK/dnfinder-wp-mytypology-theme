@@ -135,7 +135,7 @@ if ( !function_exists( 'typology_get_buttons_data' ) ):
 
 			switch ( $mkey ) {
 
-			
+
 			case 'rm':
 				$meta = '<a href="'.esc_url( get_permalink() ).'" class="typology-button">'.__typology('read_on').'</a>';
 				break;
@@ -489,7 +489,7 @@ if ( !function_exists( 'typology_get_branding' ) ):
 		$element = is_front_page() && empty( $typology_h1_used ) ? 'h1' : 'span';
 		$url = typology_get_option('logo_custom_url') ? typology_get_option('logo_custom_url') : home_url( '/' );
 
-		$output = '<'.$element.' class="site-title h4"><a href="'. esc_url( $url ) .'" rel="home">'.wp_kses_post( $brand ).'</a></'.esc_attr( $element ).'>';
+		$output = '<'.$element.' class="site-title h4"><a href="https://www.dnfinder.com/" rel="home"><img alt="DNFinder" class="typology-logo" src="http://www.dnfinder.com/assets/brand/logo-08fd38fbf9e8dcb37f48ce6c6efcf14f8db8d847d5ea040e71714f933d9c921b.svg" style="height:38px;margin-top:-11px;"></a></'.esc_attr( $element ).'>';
 
 		$typology_h1_used = true;
 
@@ -519,7 +519,7 @@ if ( !function_exists( 'typology_section_heading' ) ):
 		);
 
 		$args = typology_parse_args( $args, $defaults );
-				
+
 		$output = '';
 
 		if ( !empty( $args['title'] ) ) {
@@ -549,7 +549,7 @@ endif;
 
 if ( !function_exists( 'typology_cover_media' ) ):
 	function typology_cover_media($object = '') {
-		
+
 		$media = array();
 
 		if( typology_get_option('cover_bg_media') == 'image' && typology_get_option('cover_bg_img') ){
@@ -563,9 +563,9 @@ if ( !function_exists( 'typology_cover_media' ) ):
 		}
 
 		if ( !is_front_page() && is_page() && typology_get_option('page_fimg') == 'cover' && has_post_thumbnail() ) {
-			$media = array( 'src' =>  get_the_post_thumbnail_url( get_the_ID(), 'typology-cover'), 'type' => 'image' );  
+			$media = array( 'src' =>  get_the_post_thumbnail_url( get_the_ID(), 'typology-cover'), 'type' => 'image' );
 		}
-		
+
 		return $media;
 	}
 endif;
@@ -579,9 +579,9 @@ endif;
 
 if ( !function_exists( 'typology_display_media' ) ):
 	function typology_display_media( $args = array() ) {
-		
+
 		$defaults = array( 'type' => 'image', 'src' => '');
-		$args = wp_parse_args( $args, $defaults); 
+		$args = wp_parse_args( $args, $defaults);
 
 		$output = '';
 		if ($args['type'] == 'image') {
