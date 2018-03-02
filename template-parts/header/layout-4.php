@@ -8,15 +8,15 @@
 	<ul class="typology-nav typology-main-navigation" id="menu-top-menu" style="opacity: 1;">
 
 		<li class="menu-item menu-item-object-custom menu-item-type-custom">
-			<a href="https://www.dnfinder.com/users/sign_in">Sign in</a>
+			<a href="/users/sign_in">Sign in</a>
 		</li>
 
 		<li class="menu-item menu-item-type-custom menu-item-object-custom">
-			<a href="https://www.dnfinder.com/users/sign_up">Sign Up</a>
+			<a href="/users/sign_up">Sign Up</a>
 		</li>
 
 		<li class="menu-item menu-item-type-custom menu-item-object-custom sell_domains">
-			<a class="border-white" href="https://www.dnfinder.com/listings/sell" style="background: #2c9;">Sell Domains</a>
+			<a class="border-white" href="/listings/sell" style="background: #2c9;">Sell Domains</a>
 		</li>
 	</ul>
 
