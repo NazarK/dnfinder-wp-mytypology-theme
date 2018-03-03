@@ -489,7 +489,7 @@ if ( !function_exists( 'typology_get_branding' ) ):
 		$element = is_front_page() && empty( $typology_h1_used ) ? 'h1' : 'span';
 		$url = typology_get_option('logo_custom_url') ? typology_get_option('logo_custom_url') : home_url( '/' );
 
-		$output = '<'.$element.' class="site-title h4"><a href="https://www.dnfinder.com/" rel="home"><img alt="DNFinder" class="typology-logo" src="https://www.dnfinder.com/img/brand/logo.svg" style="height:38px;margin-top:-11px;"></a></'.esc_attr( $element ).'>';
+		$output = '<'.$element.' class="site-title h4"><a href="/" rel="home"><img alt="DNFinder" class="typology-logo" src="/img/brand/logo.svg" style="height:38px;margin-top:-11px;"></a></'.esc_attr( $element ).'>';
 
 		$typology_h1_used = true;
 
